@@ -31,7 +31,7 @@ export default function UploadDocument() {
       formData.append('file', file);
       
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/documents', {
+      const response = await fetch('https://document-verification-system-ai.onrender.com/api/documents', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

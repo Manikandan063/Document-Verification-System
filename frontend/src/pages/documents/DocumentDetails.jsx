@@ -40,7 +40,7 @@ export default function DocumentDetails() {
     const latestVersion = doc?.versions?.[0];
     if (latestVersion && latestVersion.file_path) {
       const normalizedPath = latestVersion.file_path.replace(/\\/g, '/');
-      window.open(`http://localhost:5000/${normalizedPath}`, '_blank');
+      window.open(`https://document-verification-system-ai.onrender.com/${normalizedPath}`, '_blank');
     } else {
       alert("PDF file not found.");
     }

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Adjust if your backend port differs
+  baseURL: 'https://document-verification-system-ai.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
